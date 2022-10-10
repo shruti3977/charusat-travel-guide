@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*Q.html*/
+.head{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://st4.depositphotos.com/7857468/20973/v/1600/depositphotos_209737368-stock-illustration-vector-illustration-question-answer-business.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Q{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+h1{
+    font-size: 51px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13p;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*CSPIT.html*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.cspit{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 45, 59, 0.7),rgba(41, 45, 61, 0.7)),url(https://charusat.ac.in/cspit/ce/img/portfolio/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.lab{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+.lab-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.lab-col img{
+    width: 100%;
+}
+.fac-col{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.facalties{
+    width: 90%;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 130px;
+}
+.facalties h2{
+    font-size: 25px;
+}
+.fac-col img{
+    width: 90%;
+    display: block;
+}
+.laayer{
+    background: transparent;
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.laayer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.laayer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.laayer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.t-t{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.t-t h2{
+    padding-left: 120px;
+}
+.t-t h4{
+    padding-left: 20%;
+    text-align: left;
+    padding-top: 50px;
+    font-size: 25px;
+}
+.t-t img{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:700px){
+    .t-t{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .facalties{
+        padding-top: 20px;
+        padding: 25px;
+    }
+    .t-t h2{
+        padding: 25px;
+    }
+    .t-t h4{
+        padding-top: 20px;
+        padding: 25px;
+    }
+    .t-t img{
+        padding: 20px;
+    }
+}
+/*club*/
+.club{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 45, 59, 0.7),rgba(41, 45, 61, 0.7)),url(https://dsc-upt.web.app/_next/static/images/home-875df7ff864cdbe3f228360a1b1e263f.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Name h1{
+    text-align: center;
+    padding-top: 25px;
+}
+.evs{
+    padding: 150px;
+    padding-top: 25px;
+}
+.evs h2{
+    font-size: 30px;
+}
+.evs img{
+    width: 85px;
+}
+.evs p{
+    padding-top: 15px;
+    font-size: 30px;
+}
+.gdsc{
+    padding: 150px;
+    padding-top: 25px;
+}
+.gdsc h2{
+    font-size: 30px;
+}
+.gdsc img{
+    width: 80px;
+    margin: auto;
+}
+.gdsc p{
+    padding-top: 15px;
+    font-size: 30px;
+}
+@media(max-width:700px){
+    .cal{
+        padding: 15px;
+        padding-top: 20px;
+    }
+    .gdsc{
+        padding: 15px;
+        padding-top: 20px;
+    }
+    .evs{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .evs p{
+        font-size: 25px;
+    }
+}
+/*student.html and club.html*/
+.corner h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 51px;
+    font-weight: 700;
+}
+.cal{
+    padding: 150px;
+    padding-top: 25px;
+}
+.cal h2{
+    font-size: 30px;
+}
+.cal p{
+    padding-top: 15px;
+    font-size: 30px;
+}
+.round{
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.hostel p{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+.student{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 45, 59, 0.7),rgba(41, 45, 61, 0.7)),url(https://www.damchudgir.edu.in/wp-content/uploads/2019/06/Student-Corner-1024x468.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hostel{
+    padding: 150px;
+    padding-top: 25px;
+}
+.hostel h4{
+    font-size: 20px;
+}
+.hostel h1{
+    margin: auto;
+    text-align: center;
+}
+.hostel h2{
+    text-align: left;
+    padding: auto;
+    transition: 0.5s;
+}
+.hostel h2::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: #f44336;
+    display: block;
+    margin: left;
+    transition: 5s;
+}
+.hostel h2:hover::after{
+    width: 100%;
+}
+.mess{
+    padding: 150px;
+    padding-top: 0px;
+}
+.mess h1{
+    margin: auto;
+    text-align: center;
+}
+.transport{
+    padding: 150px;
+    padding-top: 0px;
+}
+.transport p{
+    padding-top: 25px;
+}
+.transport h1{
+    margin: auto;
+    text-align: center;
+}
+.transport img{
+    padding-top: 50px;
+}
+@media(max-width: 700px){
+    .cal{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .hostel{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .mess{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .transport{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    .corner h1{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 51px;
+        font-weight: 700;
+    }
+    .student{
+        min-height: 80vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(41, 45, 59, 0.7),rgba(41, 45, 61, 0.7)),url(https://www.damchudgir.edu.in/wp-content/uploads/2019/06/Student-Corner-1024x468.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+

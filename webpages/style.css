@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*index.html*/
+.header{
+    min-height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.shiksha.com/mediadata/images/1574404527phpztLLXn.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 211px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13p;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff0000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px ;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*index.html and academics.html*/
+.body{
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(http://unblast.com/wp-content/uploads/2020/05/University-Life-Illustration-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.academics{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 35px;
+}
+.here-btn{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.here-btn:hover{
+    border: 1px;
+    transition: 1s;
+}
+h1{
+    font-size: 51px;
+    font-weight: 700;
+}
+h2{
+    text-align: left;
+    transition: 0.5s;
+}
+h2::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: #f44336;
+    display: block;
+    margin: left;
+    transition: 5s;
+}
+h2:hover::after{
+    width: 100%;
+}
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.academic-col{
+    flex-basis: 35%;
+    background: #fbebff;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    transition: 0.5sd;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.academic-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .rows{
+        flex-direction: column;
+    }
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:  rgba(239, 119, 149, 0.7);
+}
+.testimonials{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-col img{
+    height: 80px;
+    margin-left: 15px;
+    margin-right: 50px;
+    border-radius: 100%;
+}
+.testimonials-col p{
+    padding: 0%;
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+@media(max-width:700px){
+    .testimonials-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://thumbs.dreamstime.com/b/contact-us-flat-vector-illustration-tiny-people-character-concept-vector-illustration-suitable-web-landing-page-wallpaper-170148563.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(65, 65, 65, 0.7),rgba(0, 0, 0, 0.786));
+    padding: 30px 0;
+}
+.footer h3{
+    margin-bottom: 9px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 45px;
+}
+.footer h4{
+    font-weight: 800;
+    font-size: 25px;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/*Depstar*/
+.depstar{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 45, 59, 0.7),rgba(41, 45, 61, 0.7)),url(https://charusat.ac.in/cspit/ce/img/portfolio/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.dt-t img{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+}
